@@ -773,6 +773,11 @@ input[type=radio], [type=checkbox]{
     .formcust{
         padding-inline: 1rem;
     }
+
+
+    .footer-items a{
+        display: block;
+    }
 }
 @media screen and (max-width: 340px){
     
