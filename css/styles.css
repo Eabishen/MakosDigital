@@ -627,7 +627,10 @@ input[type=radio], [type=checkbox]{
 
 
 @media screen and (max-width: 900px){
-
+    .dropdown-menu{
+        border: none;
+        width: 100%;
+    }
     .navbar-nav{
         padding-block: 1rem;
     }
