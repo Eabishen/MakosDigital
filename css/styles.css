@@ -589,6 +589,10 @@ input[type=radio], [type=checkbox]{
     border-color: #4267B2;
 }
 
+.footer-items .input-group-text{
+    background-color: transparent;
+}
+
 .footertile{
     font-size: 18px;
     font-weight: 500;
