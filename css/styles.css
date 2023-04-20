@@ -761,6 +761,14 @@ input[type=radio], [type=checkbox]{
 
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
     }
+
+    .contactTitle{
+        text-align: center;
+    }
+
+    .formcust{
+        padding-inline: 1rem;
+    }
 }
 @media screen and (max-width: 340px){
     
