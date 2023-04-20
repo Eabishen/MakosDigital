@@ -131,6 +131,7 @@ z-index: 99;
 .dropdown-menu .dropdown-item{
     display: block;
     padding-block: 0.5rem;
+    white-space: normal;
 }
 
 .dropdown-menu .dropdown-item:hover .svgclass{
@@ -666,7 +667,9 @@ input[type=radio], [type=checkbox]{
 }
 
 @media screen and (max-width: 500px){
-
+    .wording{
+        font-size: 13px;
+    }
 
     .mainheading, .businesscards, .contactwrapper, .footerWrapper{
         grid-template-columns: 1fr;
