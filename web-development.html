@@ -267,7 +267,7 @@
         </div>
       </div>
     </div>
-    <!-- Modal end -->
+    <!-- modal end -->
 
     <header>
       <nav class="navbar navbar-expand-lg custom-navbar">
@@ -550,642 +550,379 @@
       </nav>
     </header>
 
-    <section id="landing-page">
-      <div class="flexbox">
-        <div class="container">
-          <div class="mainheading">
-            <div>
-              <h5>It’s Better than Ever</h5>
-              <h1>Analyze, Advertise and Optimize ! We do it all for you.</h1>
+    <section id="servicepage-landing">
+      <div class="conatiner">
+        <div class="service-landing">
+          <h1>Web Development</h1>
+
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+              <li class="breadcrumb-item">
+                <a href="./our-services.html">Services</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Web Development
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <img class="image-left" src="./assets/material/ngMaterial.svg" alt="" />
+      <img class="image-right" src="./assets/material/ngMaterial.svg" alt="" />
+    </section>
+
+    <section id="webintro">
+      <div class="container">
+        <div class="gridWrapper">
+          <div class="webintrogridcontent">
+            <div class="webintrotitle">
+              More Than Just <span class="primarycolor">App</span>
             </div>
-            <div class="ctabtn">
-              <button
-                type="button"
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#staticBackdrop"
+            <div class="webintropara">
+              <span
+                ><p>
+                  We offer professional web design services at affordable rates
+                  to help your business attract more visitors!
+                </p></span
               >
-                Get your Quote
-              </button>
+              <br />
+              <p>
+                We build websites that support your business plan, drive
+                traffic, and deliver the results you require. We can help you
+                launch a new website from scratch, assist with a website
+                transfer, increase traffic to your present website, or simply
+                increase the traffic's conversion rate.
+              </p>
+              <br />
+              <p>
+                e begin by organizing the information architecture and outlining
+                the functionality. Custom mobile apps are also created by our
+                experienced app developers to help your business expand.
+              </p>
             </div>
           </div>
-        </div>
-        <img
-          class="landingpage-image"
-          src="./assets/Jevelin-showcase-main-image.png"
-          alt=""
-        />
-      </div>
-      <div class="belowcont">
-        <div class="container">
-          <div class="landingpage-card">
-            <div class="cardstack">
-              <div class="innerstack">
-                <div class="cardicon">
-                  <img
-                    src="https://jevelin.shufflehound.com/hello/wp-content/uploads/sites/22/2019/08/service-1.png"
-                  />
-                </div>
-                <div class="cardcontent">
-                  <div class="cardheader">One stop Solution</div>
-                  <div class="cardpara">
-                    For faster business growth, all it takes is one phone call !
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="cardstack">
-              <div class="innerstack">
-                <div class="cardicon">
-                  <img
-                    src="data:image/png;base64,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"
-                  />
-                </div>
-                <div class="cardcontent">
-                  <div class="cardheader">Better tools to rank higher</div>
-                  <div class="cardpara">
-                    Utilizing the most up-to-date and effective tools, boosting
-                    your business!
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="cardstack">
-              <div class="innerstack">
-                <div class="cardicon">
-                  <img src="./assets/trust.png" />
-                </div>
-                <div class="cardcontent">
-                  <div class="cardheader">Build trust together</div>
-                  <div class="cardpara">
-                    Get specialized support to resolve any of your
-                    business-related problems
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="webintrogridimage">
+            <img src="./assets/welcome.png" alt="" />
           </div>
         </div>
       </div>
     </section>
 
-    <section id="business-section">
+    <section id="webdevfeature">
       <div class="container">
-        <div class="headingbusiness">We take care of your Business</div>
-        <div class="businesscards">
-          <div class="businesssignlecard">
-            <div class="businessimagecontainer">
-              <img
-                class="businessimage"
-                src="https://i.postimg.cc/KjDdbfpL/makossdsd.png"
-                alt=""
-              />
-            </div>
-            <div class="businesstitle">E-commerce</div>
-          </div>
-          <div class="businesssignlecard">
-            <div class="businessimagecontainer">
-              <img
-                class="businessimage"
-                src="https://i.postimg.cc/nzC4phd1/makossdsd3.png"
-                alt=""
-              />
-            </div>
-            <div class="businesstitle">Applications</div>
-          </div>
-          <div class="businesssignlecard">
-            <div class="businessimagecontainer">
-              <img class="businessimage" src="./assets/social.jpg" alt="" />
-            </div>
-            <div class="businesstitle">Social media</div>
-          </div>
-          <div class="businesssignlecard">
-            <div class="businessimagecontainer">
-              <img class="businessimage" src="./assets/business.jpg" alt="" />
-            </div>
-            <div class="businesstitle">Business</div>
-          </div>
-          <div class="businesssignlecard">
-            <div class="businessimagecontainer">
-              <img
-                class="businessimage"
-                src="./assets/virtualassistant.jpeg"
-                alt=""
-              />
-            </div>
-            <div class="businesstitle">Virtual assistance</div>
-          </div>
-          <div class="businesssignlecard">
-            <div class="businessimagecontainer">
-              <img
-                class="businessimage"
-                src="./assets/advertising.png"
-                alt=""
-              />
-            </div>
-            <div class="businesstitle">Advertising</div>
-          </div>
+        <div class="howitsgoingtitle">
+          What We <span class="primarycolor">Offer</span>
         </div>
-      </div>
-    </section>
-
-    <section id="featuressection">
-      <div class="container">
-        <div class="subheadingbusiness">Key Features</div>
-        <div class="headingbusiness">Our Best Services</div>
-        <div class="businesscards px-0">
-          <div class="featurescards">
-            <img
-              src="	https://demo.themewinter.com/html/seobin/images/icon/service5.png"
-              alt=""
-            />
-            <div class="featuretile">Website Development</div>
-            <div class="featurespara">
-              Building websites that complement your business plan, drive
-              traffic, and deliver the results your business require.
-            </div>
-          </div>
-          <div class="featurescards">
-            <img
-              src="https://demo.themewinter.com/html/seobin/images/icon/service1.png"
-              alt=""
-            />
-            <div class="featuretile">Search Engine Marketing</div>
-            <div class="featurespara">
-              Work with specialized SEO/SEM specialists to deliver results over
-              time that are consistent, assuring the highest potential return on
-              marketing expenditures.
-            </div>
-          </div>
-          <div class="featurescards">
-            <img
-              src="	https://demo.themewinter.com/html/seobin/images/icon/service3.png
-              "
-              alt=""
-            />
-            <div class="featuretile">Email Marketing</div>
-            <div class="featurespara">
-              Create your emailer using a smart tool, track and monitor the
-              email marketing campaign and give clients with precise statistics
-              including optimizing metrics.
-            </div>
-          </div>
-          <div class="featurescards">
-            <img
-              src="	https://demo.themewinter.com/html/seobin/images/icon/service6.png"
-              alt=""
-            />
-            <div class="featuretile">Social media marketing</div>
-            <div class="featurespara">
-              The full range of social media marketing services that businesses
-              need to manage and monitor every aspect of their online presence.
-            </div>
-          </div>
-          <div class="featurescards">
-            <img
-              src="https://demo.themewinter.com/html/seobin/images/icon/service2.png"
-              alt=""
-            />
-            <div class="featuretile">Content Marketing</div>
-            <div class="featurespara">
-              We strategically plan and sync content with your target market to
-              assist you attract as many online visitors as possible.
-            </div>
-          </div>
-          <div class="featurescards">
-            <img
-              src="	https://demo.themewinter.com/html/seobin/images/icon/service4.png"
-              alt=""
-            />
-            <div class="featuretile">
-              Digital Marketing Strategic Consultation
-            </div>
-            <div class="featurespara">
-              With consultancy, identify the tactics businesses need to place
-              themselves on the market to expand and implement them.
-            </div>
-          </div>
+        <div class="howitsgoingpara">
+          We offer professional web design services at affordable rates to help
+          your business attract more visitors and keep them on your site!
         </div>
-      </div>
-    </section>
-
-    <section id="testimonal">
-      <div class="container">
-        <div class="headingbusiness">What people are saying about Us</div>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="wrappertestimonal">
-                <div class="testimonalcontent">
-                  Starting from establishing a logo to every experience i’ve
-                  done with my team is something I love the most. It won’t be
-                  easier without this supporting team. I enjoyed working with
-                  you all. Cheers to the makos and team. Keep it up.
-                </div>
-                <div class="tesimonalimage">
-                  <img src="./assets/avatar.avif" alt="" />
-                  <div class="testimonalname">Annai Promoters</div>
-                </div>
+        <div class="main-feature">
+          <div class="howitsgoingfeatures">
+            <div class="singlefeature">
+              <div class="featureimage">
+                <p>
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path
+                      d="M20 3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h3l-1 1v2h12v-2l-1-1h3c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 13H4V5h16v11z"
+                    ></path>
+                  </svg>
+                </p>
               </div>
+              <div class="featurecontent">Timely delivery</div>
             </div>
-            <div class="swiper-slide">
-              <div class="wrappertestimonal">
-                <div class="testimonalcontent">
-                  A personality with understanding and honesty, Sir Ashokk Remi
-                  John is a kind heart, enthusiastic and hardworking person who
-                  completes every task without getting tired. I am glad I got a
-                  chance to work with Makos Infotech.
-                </div>
-                <div class="tesimonalimage">
-                  <img src="./assets/avatar.avif" alt="" />
-                  <div class="testimonalname">Haxin Laboratories</div>
-                </div>
+            <div class="singlefeature">
+              <div class="featureimage">
+                <p>
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2C6.486 2 2 6.486 2 12v4.143C2 17.167 2.897 18 4 18h1a1 1 0 0 0 1-1v-5.143a1 1 0 0 0-1-1h-.908C4.648 6.987 7.978 4 12 4s7.352 2.987 7.908 6.857H19a1 1 0 0 0-1 1V18c0 1.103-.897 2-2 2h-2v-1h-4v3h6c2.206 0 4-1.794 4-4 1.103 0 2-.833 2-1.857V12c0-5.514-4.486-10-10-10z"
+                    ></path>
+                  </svg>
+                </p>
               </div>
+              <div class="featurecontent">Customer support</div>
             </div>
-          </div>
-          <!-- <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div> -->
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contacussection">
-      <div class="container bgcust">
-        <div class="contactwrapper">
-          <div class="leftsidecontact">
-            <div class="contactTitle">Get in Touch</div>
-            <div class="contactpara">Fill up the form below to contact you</div>
-
-            <div class="contactinformation">
-              <div class="somecontact">
-                <div class="someicon">
+            <div class="singlefeature">
+              <div class="featureimage">
+                <p>
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
                     stroke-width="0"
-                    viewBox="0 0 24 24"
-                    color="#1970F1"
-                    aria-hidden="true"
-                    focusable="false"
-                    height="20px"
-                    width="20px"
+                    viewBox="0 0 512 512"
+                    height="1em"
+                    width="1em"
                     xmlns="http://www.w3.org/2000/svg"
-                    style="color: rgb(25, 112, 241)"
                   >
-                    <path fill="none" d="M0 0h24v24H0z"></path>
                     <path
-                      d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                      d="M400 421.3V154.7c0-23.5-19.2-42.7-42.7-42.7H90.7C67.2 112 48 131.2 48 154.7v266.7c0 23.5 19.2 42.7 42.7 42.7h266.7c23.4-.1 42.6-19.3 42.6-42.8zM157.3 304l45.3 64 66.7-96 88 128H90.7l66.6-96z"
+                    ></path>
+                    <path
+                      d="M421.3 48H154.7C131.2 48 112 67.2 112 90.7V96h261.3c23.5 0 42.7 19.2 42.7 42.7V400h5.3c23.5 0 42.7-19.2 42.7-42.7V90.7c0-23.5-19.2-42.7-42.7-42.7z"
                     ></path>
                   </svg>
-                </div>
-                <div class="sometext">
-                  <a href="tel: +918601680518">+91 8601680518</a>
-                </div>
+                </p>
               </div>
-              <div class="somecontact">
-                <div class="someicon">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 24 24"
-                    color="#1970F1"
-                    aria-hidden="true"
-                    focusable="false"
-                    height="20px"
-                    width="20px"
-                    xmlns="http://www.w3.org/2000/svg"
-                    style="color: rgb(25, 112, 241)"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                    <path
-                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="sometext">
-                  <a href="mailto: makosdigital@gmail.com"
-                    >makosdigital@gmail.com</a
-                  >
-                </div>
-              </div>
-              <div class="somecontact">
-                <div class="someicon">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 24 24"
-                    color="#1970F1"
-                    aria-hidden="true"
-                    focusable="false"
-                    height="20px"
-                    width="20px"
-                    xmlns="http://www.w3.org/2000/svg"
-                    style="color: rgb(25, 112, 241)"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                    <path
-                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="sometext">
-                  <a>Chennai, India</a>
-                </div>
-              </div>
+              <div class="featurecontent">Unique designs</div>
             </div>
-
-            <div class="socialhandle">
-              <div class="socailicons">
-                <a
-                  href="https://www.facebook.com/makosdigital?mibextid=ZbWKwL"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                    focusable="false"
-                    height="28px"
-                    width="28px"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                    <path
-                      d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
-              <div class="socailicons">
-                <a
-                  href="https://instagram.com/makosdigital?igshid=Yzg5MTU1MDY="
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+            <div class="singlefeature">
+              <div class="featureimage">
+                <p>
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
                     stroke-width="0"
                     viewBox="0 0 1024 1024"
-                    aria-hidden="true"
-                    focusable="false"
-                    height="28px"
-                    width="28px"
+                    height="1em"
+                    width="1em"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3 645.3 585.4 645.3 512 585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9 717.1 398.5 717.1 512 625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9 47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9z"
+                      d="M145 96l66 746.6L511.8 928l299.6-85.4L878.7 96H145zm610.9 700.6l-244.1 69.6-245.2-69.6-56.7-641.2h603.8l-57.8 641.2zM281 249l1.7 24.3 22.7 253.5h206.5v-.1h112.9l-11.4 118.5L511 672.9v.2h-.8l-102.4-27.7-6.5-73.2h-91l11.3 144.7 188.6 52h1.7v-.4l187.7-51.7 1.7-16.3 21.2-242.2 3.2-24.3H511v.2H389.9l-8.2-94.2h352.1l1.7-19.5 4.8-47.2L742 249H511z"
                     ></path>
                   </svg>
-                </a>
+                </p>
               </div>
-              <div class="socailicons">
-                <a
-                  href="https://www.linkedin.com/feed/update/urn:li:activity:6915191638457798657?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6915191638457798657%29"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+              <div class="featurecontent">Responsiveness</div>
+            </div>
+            <div class="singlefeature">
+              <div class="featureimage">
+                <p>
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
                     stroke-width="0"
-                    viewBox="0 0 16 16"
-                    aria-hidden="true"
-                    focusable="false"
-                    height="22px"
-                    width="22px"
+                    viewBox="0 0 24 24"
+                    height="1em"
+                    width="1em"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
-                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="rightsidecontact">
-            <form class="formcust" action="">
-              <div class="col-12">
-                <label for="inputGroupPrepend" class="form-label"
-                  >Your Name</label
-                >
-                <div class="inputcontainer">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="yourname"
-                    aria-describedby="Name"
-                    placeholder="Enter Name"
-                    required
-                  />
-
-                  <div class="iconcontact">
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 16 16"
-                      color="gray.800"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <label for="inputGroupPrepend" class="form-label"
-                  >Your Email</label
-                >
-                <div class="inputcontainer">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="yourEmail"
-                    aria-describedby="Email"
-                    placeholder="Enter Email"
-                    required
-                  />
-
-                  <div class="iconcontact">
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 24 24"
-                      color="gray.800"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path fill="none" d="M0 0h24v24H0V0z"></path>
-                      <path
-                        d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <label for="inputGroupPrepend" class="form-label"
-                  >Your Phone</label
-                >
-                <div class="inputcontainer">
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="yourphone"
-                    aria-describedby="phone"
-                    placeholder="Enter phone"
-                    required
-                  />
-
-                  <div class="iconcontact">
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 24 24"
-                      color="gray.800"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <g>
                       <path fill="none" d="M0 0h24v24H0z"></path>
                       <path
-                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                        fill-rule="nonzero"
+                        d="M11 2l7.298 2.28a1 1 0 0 1 .702.955V7h2a1 1 0 0 1 1 1v2H9V8a1 1 0 0 1 1-1h7V5.97l-6-1.876L5 5.97v7.404a4 4 0 0 0 1.558 3.169l.189.136L11 19.58 14.782 17H10a1 1 0 0 1-1-1v-4h13v4a1 1 0 0 1-1 1l-3.22.001c-.387.51-.857.96-1.4 1.33L11 22l-5.38-3.668A6 6 0 0 1 3 13.374V5.235a1 1 0 0 1 .702-.954L11 2z"
                       ></path>
-                    </svg>
-                  </div>
-                </div>
+                    </g>
+                  </svg>
+                </p>
               </div>
-
-              <div class="col-12">
-                <label for="" class="form-label">Inquiry for</label>
-                <div class="d-flex gap-3">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="self"
-                      id="self"
-                      checked
-                    />
-                    <label class="form-check-label" for="self"> Self </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="company"
-                      id="company"
-                    />
-                    <label class="form-check-label" for="company">
-                      Company
-                    </label>
-                  </div>
-                </div>
+              <div class="featurecontent">Bug free</div>
+            </div>
+            <div class="singlefeature">
+              <div class="featureimage">
+                <p>
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    t="1569683618210"
+                    viewBox="0 0 1024 1024"
+                    version="1.1"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs></defs>
+                    <path
+                      d="M945 412H689c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h256c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM811 548H689c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h122c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM477.3 322.5H434c-6.2 0-11.2 5-11.2 11.2v248c0 3.6 1.7 6.9 4.6 9l148.9 108.6c5 3.6 12 2.6 15.6-2.4l25.7-35.1v-0.1c3.6-5 2.5-12-2.5-15.6l-126.7-91.6V333.7c0.1-6.2-5-11.2-11.1-11.2z"
+                    ></path>
+                    <path
+                      d="M804.8 673.9H747c-5.6 0-10.9 2.9-13.9 7.7-12.7 20.1-27.5 38.7-44.5 55.7-29.3 29.3-63.4 52.3-101.3 68.3-39.3 16.6-81 25-124 25-43.1 0-84.8-8.4-124-25-37.9-16-72-39-101.3-68.3s-52.3-63.4-68.3-101.3c-16.6-39.2-25-80.9-25-124 0-43.1 8.4-84.7 25-124 16-37.9 39-72 68.3-101.3 29.3-29.3 63.4-52.3 101.3-68.3 39.2-16.6 81-25 124-25 43.1 0 84.8 8.4 124 25 37.9 16 72 39 101.3 68.3 17 17 31.8 35.6 44.5 55.7 3 4.8 8.3 7.7 13.9 7.7h57.8c6.9 0 11.3-7.2 8.2-13.3-65.2-129.7-197.4-214-345-215.7-216.1-2.7-395.6 174.2-396 390.1C71.6 727.5 246.9 903 463.2 903c149.5 0 283.9-84.6 349.8-215.8 3.1-6.1-1.4-13.3-8.2-13.3z"
+                    ></path>
+                  </svg>
+                </p>
               </div>
-
-              <div class="col-12">
-                <label for="" class="form-label">Regarding</label>
-                <div>
-                  <div class="form-check form-check-inline querycheckbox">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      id="webdev"
-                      value="Web Development"
-                    />
-                    <label class="form-check-label" for="webdev"
-                      >Web Development</label
-                    >
-                  </div>
-                  <div class="form-check form-check-inline querycheckbox">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      id="seo"
-                      value="Search Engine Marketing"
-                    />
-                    <label class="form-check-label" for="seo"
-                      >Search Engine Marketing</label
-                    >
-                  </div>
-                  <div class="form-check form-check-inline querycheckbox">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      id="smm"
-                      value="Social Media Marketing"
-                    />
-                    <label class="form-check-label" for="smm"
-                      >Social Media Marketing</label
-                    >
-                  </div>
-                  <div class="form-check form-check-inline querycheckbox">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      id="emailmarketing"
-                      value="Email Marketing"
-                    />
-                    <label class="form-check-label" for="emailmarketing"
-                      >Email Marketing</label
-                    >
-                  </div>
-                  <div class="form-check form-check-inline querycheckbox">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      id="contentmarketing"
-                      value="Content Marketing"
-                    />
-                    <label class="form-check-label" for="contentmarketing"
-                      >Content Marketing</label
-                    >
-                  </div>
-                  <div class="form-check form-check-inline querycheckbox">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      id="digitalmarketing"
-                      value="Digital Marketing"
-                    />
-                    <label class="form-check-label" for="digitalmarketing"
-                      >Digital Marketing</label
-                    >
-                  </div>
-                  <div class="form-check form-check-inline querycheckbox">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      id="other"
-                      value="other"
-                    />
-                    <label class="form-check-label" for="other">Other</label>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-6 col-lg-4">
-                <button class="btn btn-primary fw-medium" type="submit">
-                  Send Message
-                </button>
-              </div>
-            </form>
+              <div class="featurecontent">Technical stats</div>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="howitzgoing">
+      <div class="container">
+        <div class="howitsgoingtitle">
+          How It Is <span class="primarycolor">Going</span>
+        </div>
+        <div class="howitsgoingpara">
+          We offer professional web design services at affordable rates to help
+          your business attract more visitors and keep them on your site!
+        </div>
+        <div class="howitsgoingsteps">
+          <div class="topdiv margin-cust">
+            <div class="gridone gridnumber">01</div>
+            <div class="gridtwo">
+              <div class="gridimage">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M400 421.3V154.7c0-23.5-19.2-42.7-42.7-42.7H90.7C67.2 112 48 131.2 48 154.7v266.7c0 23.5 19.2 42.7 42.7 42.7h266.7c23.4-.1 42.6-19.3 42.6-42.8zM157.3 304l45.3 64 66.7-96 88 128H90.7l66.6-96z"
+                  ></path>
+                  <path
+                    d="M421.3 48H154.7C131.2 48 112 67.2 112 90.7V96h261.3c23.5 0 42.7 19.2 42.7 42.7V400h5.3c23.5 0 42.7-19.2 42.7-42.7V90.7c0-23.5-19.2-42.7-42.7-42.7z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="gridthree gridwording">Documentation</div>
+            <div class="gridfour emptygrid"></div>
+          </div>
+          <div class="bottomdiv">
+            <div class="gridone emptygrid"></div>
+            <div class="gridtwo gridnumber">02</div>
+            <div class="gridthree">
+              <div class="gridimage">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="none"
+                    stroke="#000"
+                    stroke-width="2"
+                    d="M0,22 L24,22 M22,2 L18,2 L18,18 L22,18 L22,2 Z M6,6 L2,6 L2,18 L6,18 L6,6 Z M14,18 L10,18 L10,10 L14,10 L14,18 Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="gridfour gridwording">UI Approval</div>
+          </div>
+          <div class="topdiv">
+            <div class="gridone gridnumber">03</div>
+            <div class="gridtwo">
+              <div class="gridimage">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path
+                    d="M12 22C6.49 22 2 17.51 2 12S6.49 2 12 2s10 4.04 10 9c0 3.31-2.69 6-6 6h-1.77c-.28 0-.5.22-.5.5 0 .12.05.23.13.33.41.47.64 1.06.64 1.67A2.5 2.5 0 0112 22zm0-18c-4.41 0-8 3.59-8 8s3.59 8 8 8c.28 0 .5-.22.5-.5a.54.54 0 00-.14-.35c-.41-.46-.63-1.05-.63-1.65a2.5 2.5 0 012.5-2.5H16c2.21 0 4-1.79 4-4 0-3.86-3.59-7-8-7z"
+                  ></path>
+                  <circle cx="6.5" cy="11.5" r="1.5"></circle>
+                  <circle cx="9.5" cy="7.5" r="1.5"></circle>
+                  <circle cx="14.5" cy="7.5" r="1.5"></circle>
+                  <circle cx="17.5" cy="11.5" r="1.5"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="gridthree gridwording">Development</div>
+            <div class="gridfour emptygrid"></div>
+          </div>
+          <div class="bottomdiv">
+            <div class="gridone emptygrid"></div>
+            <div class="gridtwo gridnumber">04</div>
+            <div class="gridthree">
+              <div class="gridimage">
+                <svg
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-width="0"
+                  viewBox="0 0 15 15"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.71144 0.796902C7.57741 0.734357 7.42257 0.734357 7.28855 0.796902L1.28855 3.5969C1.11251 3.67905 0.999993 3.85573 0.999993 4.04999V10.95C0.999993 11.1443 1.11251 11.3209 1.28855 11.4031L7.28855 14.2031C7.42257 14.2656 7.57741 14.2656 7.71144 14.2031L13.7114 11.4031C13.8875 11.3209 14 11.1443 14 10.95V4.04999C14 3.85573 13.8875 3.67905 13.7114 3.5969L7.71144 0.796902ZM7.49999 3.15674L5.98039 2.51091L7.49999 1.80176L9.01959 2.51091L7.49999 3.15674ZM7.69556 4.16018L10.2382 3.07958L12.2719 4.02865L7.49999 6.05671L2.72808 4.02865L4.76181 3.07958L7.30442 4.16018C7.42939 4.2133 7.57059 4.2133 7.69556 4.16018ZM7.99999 6.93078L13 4.80578V7.92966L11.0821 8.8119C10.7273 8.97509 10.5 9.32988 10.5 9.72039V11.7982L7.99999 12.9649V6.93078ZM11.5 11.3316L13 10.6316V9.03039L11.5 9.72039V11.3316ZM6.99999 6.93078V12.9649L4.50231 11.7993V9.72036C4.50231 9.32985 4.27499 8.97506 3.92022 8.81187L1.99999 7.92856V4.80578L6.99999 6.93078ZM1.99999 10.6316L3.50231 11.3326L3.50231 9.72036L1.99999 9.02929V10.6316Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="gridfour gridwording">Validation</div>
+          </div>
+          <div class="topdiv">
+            <div class="gridone gridnumber">05</div>
+            <div class="gridtwo">
+              <div class="gridimage">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 1024 1024"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M209.68 883.264c-20.112 41.807-32.802 69.666-144.689 73.73 3.216-107.968 23.792-119.552 64.992-140.08 17.296-8.624 38.832-19.344 62.113-37.248l-38.96-49.744c-18.4 14.128-35.329 21.568-51.697 29.712C32.8 793.858.45 827.569.45 988.289l.543 32.704 31.456-.704c169.632 0 201.328-38.32 233.104-104.32 6.96-14.464 10.832-24.24 22.56-43.729l-47.456-43.104c-14.224 19.408-23.104 37.872-30.976 54.128zm495.279-694.607c-70.768 0-128.352 57.583-128.352 128.335 0 70.784 57.6 128.353 128.352 128.353s128.336-57.584 128.336-128.352c0-70.752-57.6-128.336-128.336-128.336zm0 192.415c-35.328 0-64.08-28.752-64.08-64.08 0-35.313 28.752-64.08 64.08-64.08s64.08 28.767 64.08 64.08c-.016 35.344-28.752 64.08-64.08 64.08zm318.821-351.76c-.976-15.968-13.63-28.771-29.598-29.955 0 0-179.088-13.056-351.376 51.28-62.944 23.504-114.752 60.737-163.104 117.137-40.32 47.025-80.385 132.032-115.745 202.608-13.664 27.248-26.72 53.313-37.792 73.217H148.15a32.003 32.003 0 0 0-23.936 10.768L6.917 581.503A31.993 31.993 0 0 0 .388 612.51c3.44 10.785 12.32 18.945 23.329 21.44l190.944 43.665c13.007 16.064 34.687 40.097 69.376 78.593l72.335 80.192 38.945 164.72a31.984 31.984 0 0 0 21.231 23.056c3.233 1.024 6.576 1.568 9.904 1.568a31.95 31.95 0 0 0 20.832-7.712l118.56-117.936a31.981 31.981 0 0 0 11.184-24.288v-165.12c15.936-9.904 44.191-25.152 70.783-40.032 72.464-40.496 180.624-90.912 225.472-130.784 63.153-56.128 86.16-97.28 108.752-158.112 53.712-144.688 42.288-344.031 41.744-352.447zM922.001 359.469c-19.712 53.072-37.568 84.83-91.248 132.558-39.664 35.232-148.128 85.824-214.192 122.769-49.312 27.568-78.848 43.664-91.792 54.256a31.949 31.949 0 0 0-11.76 24.784v167.248l-67.52 74.193-28.752-121.6a31.949 31.949 0 0 0-7.393-14.064c-58.847-65.216-147.743-163.808-154.56-171.632a32.017 32.017 0 0 0-17.568-10.848L90.624 583.597l71.904-76H344.56a31.988 31.988 0 0 0 27.264-15.248c14.08-22.928 30.416-55.536 49.344-93.296 32.048-63.952 71.92-148.544 107.12-189.632 41.584-48.528 83.824-79.009 136.896-98.848C783.28 66.445 905.152 61.805 960.864 62.22c1.04 59.008-1.184 195.824-38.863 297.248z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="gridthree gridwording">Hosting</div>
+            <div class="gridfour emptygrid"></div>
+          </div>
+          <img
+            class="howitsgoingimg"
+            src="./assets/material/steps.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="freeqoute">
+      <div class="container">
+        <div class="titleqoute">
+          Get a <span class="text-warning">free</span> prototype of your future
+          website.
+        </div>
+        <div class="paraqoutes">
+          To help your company get more customers and keep them on your website,
+          we provide <br />
+          affordable, professional web design services.
+        </div>
+
+        <div class="btnqoute">
+          <button
+            type="button"
+            class="btn btn-warning"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            Get your Quote
+          </button>
         </div>
       </div>
     </section>

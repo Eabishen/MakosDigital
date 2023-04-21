@@ -42,6 +42,9 @@ body{
     color: var(--our-dark);
 }
 
+.primarycolor{
+    color: var(--our-primary);
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -625,13 +628,354 @@ input[type=radio], [type=checkbox]{
     height: 14px;
 }
 
+
+/* Service Page */
+
+#servicepage-landing{
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 120, 255) 0%, rgb(5, 80, 201) 100%);
+    min-height: 35vh;
+    position: relative;
+    overflow: hidden;
+    padding-block: 2rem;
+}
+
+.breadcrumb{
+    align-items: center;
+    justify-content: center;
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+    color: var(--our-light);
+}
+
+.breadcrumb-item.active{
+    color: #d8d8d8;
+    transition:  all 0.3s ease;
+    transform-origin: center;
+}
+
+.breadcrumb-item:hover:not(.breadcrumb-item.active){
+    transform: scale(1.03);
+}
+
+
+.service-landing{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;  
+    min-height: 35vh;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: var(--our-light);
+}
+
+.image-left, .image-right{
+    position: absolute;
+    opacity: 0.8;
+}
+
+.image-right{
+    right: -10px;
+    top: -50px;
+}
+
+.image-left{
+    transform: rotate(180deg);
+    left: -10px;
+    bottom: -50px;
+}
+
+#howitzgoing{
+    padding-block: 2rem 10px;
+    min-height: 100vh;
+}
+
+.howitsgoingtitle{
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.howitsgoingpara{
+    color: var(--our-muted);
+    text-align: center;
+    width: 60%;
+    margin-inline: auto;
+}
+
+.howitsgoingsteps{
+    position: relative;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+    z-index: 10;
+}
+
+.howitsgoingimg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    z-index: -1;
+    object-fit: contain;
+    aspect-ratio: 16/9;
+}
+
+.bottomdiv, .topdiv{
+    font-size: 26px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    transition:  all 0.3s cubic-bezier(0.49, 0.18, 0.22, 1.12);
+}
+
+.topdiv:hover, .bottomdiv:hover{
+    transform: scale(1.1);
+}
+
+.topdiv {
+    
+    grid-template-rows:  1fr 1fr 1fr 2fr;
+
+}
+
+.topdiv.margin-cust {
+    margin-bottom: 3rem;
+    margin-left: 04rem;
+}
+
+.bottomdiv{
+    grid-template-rows: 2fr 1fr 1fr 1fr ;
+}
+
+.gridnumber{
+    font-weight: 500;
+    font-size: 32px;
+    color: rgb(204, 204, 204);
+}
+
+.gridimage {
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgb(0, 120, 255);
+    border-radius: 100vmax;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--our-light);
+}
+
+
+
+.gridimage svg:hover{
+    fill: rgb(0, 120, 255);
+    color: rgb(0, 120, 255);
+    stroke: rgb(0, 120, 255);
+}
+
+#webintro{
+    padding-block: 2rem;
+}
+
+.gridWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.webintrogridcontent,.gridimage svg{
+    transition:  all 0.3s cubic-bezier(0.49, 0.18, 0.22, 1.12);
+
+}
+
+.webintrogridcontent:hover{
+    transform: scale(1.05);
+}
+
+.webintrogridcontent .webintrotitle{
+    margin-block: 2rem 01rem;
+    font-size: 28px;
+}
+
+.webintrogridcontent p{
+    margin: 0;
+    font-size: 14px;
+    color: rgb(54, 54, 54);
+}
+
+.webintropara span p{
+    font-size: 16px;
+
+    font-weight: 500;
+}
+
+.webintrogridimage{
+    position: relative;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+
+
+.webintrogridimage.perfectimage img{
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    object-position: center;
+}
+
+.webintrogridimage img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    aspect-ratio: 9/16;
+    transform: scale(0.9);
+}
+
+#webdevfeature{
+    padding-block: 2rem;
+}
+
+.main-feature{
+    display: grid;
+    place-items: center;
+}
+
+.howitsgoingfeatures{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.singlefeature{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition:  all 0.3s cubic-bezier(0.49, 0.18, 0.22, 1.12);
+
+}
+
+.singlefeature:hover{
+    transform: scale(1.02);
+}
+
+
+.singlefeature .featureimage p{
+    border: 2px solid rgb(0, 120, 255);
+    border-radius: 100vmax;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.singlefeature .featureimage svg{
+    width: 30px;
+    height: 30px;
+}
+
+.singlefeature .featurecontent{
+    font-size: 26px;
+    color: rgb(0, 120, 255);
+    font-weight: 500;
+}
+
+#freeqoute{
+    padding: 2rem;
+    background: linear-gradient(0deg, rgb(0, 120, 255) 0%, rgb(5, 80, 201) 57%);
+}
+
+.titleqoute{
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--our-light);
+}
+
+.paraqoutes{
+    color: var(--our-light);
+    margin-block: 1rem;
+    text-align: center;
+    line-height: 32px;
+}
+
+.btnqoute{
+    text-align: center;
+}
+
+.intropoints{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 1rem;
+    border-bottom: 0.5px solid rgb(238, 238, 238);
+}
+
+.intropoints .intropointsicon p{
+    width: 30px;
+    height: 30px;
+    border-radius: 100vmax;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intropoints .intropointsicon p svg{
+    width: 20px;
+    height: 20px;
+    
+}
+
+
+.yellowbg{
+    background-color: #FEFCBF;
+}
+.intropoints .intropointsicon .yellowbg svg{
+    fill: #D69E2E;
+}
+
+.greenbg{
+    background-color: #C6F6D5;
+
+}
+.intropoints .intropointsicon .greenbg svg{
+    fill: #38A169;    
+    
+}
+    
+.purplebg{
+    background-color: #E9D8FD;
+}
+.intropoints .intropointsicon .purplebg svg{
+    fill: #805AD5;
+}
+
+.intropointtitel{
+    font-weight: 700;
+}
+
+/* Service Page */
+
+
 @media screen and (max-width: 1120px){
 
-
+   
 }
 
 
 @media screen and (max-width: 900px){
+
+  
     .dropdown-menu{
         border: none;
         width: 100%;
@@ -663,6 +1007,31 @@ input[type=radio], [type=checkbox]{
 
     .swiper-slide{
         padding-bottom: 40px;
+    }
+
+    .howitsgoingsteps{
+        min-height: auto;
+    }
+
+    .topdiv, .bottomdiv{
+        font-size: 16px;
+    }
+
+    .topdiv.margin-cust {
+        margin-left: 0rem;
+        margin-bottom: 0;
+    }
+
+    .howitsgoingfeatures{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .webintrogridimage{
+        min-height: auto;
+    }
+
+    .webintrogridimage img{
+        height: auto;
     }
 
     .footerWrapper{
@@ -763,9 +1132,6 @@ input[type=radio], [type=checkbox]{
         padding-bottom: 2rem;
     }
 
-    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
-    }
-
     .contactTitle{
         text-align: center;
     }
@@ -774,6 +1140,69 @@ input[type=radio], [type=checkbox]{
         padding-inline: 1rem;
     }
 
+    .image-left .image-right{
+        opacity: 0.2;
+    }
+
+    #servicepage-landing:after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.15);
+        inset: 0;
+    }
+
+    .howitsgoingsteps{
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        margin-top: 2rem;
+    }
+    .topdiv, .bottomdiv{
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 1fr;
+     width: 100%;
+     place-items: start;
+    }
+  
+
+    .howitsgoingpara{
+        width: 100%;
+    }
+
+    .gridimage{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .gridwording{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .emptygrid{
+        display: none;
+    }
+
+    .gridWrapper{
+        grid-template-columns: 1fr;
+    }
+
+    .webintrogridcontent p{
+        text-align: justify;
+    }
+
+    .webintrogridimage{
+        display: none;
+    }
+    .howitsgoingfeatures{
+        grid-template-columns:1fr;
+    }
 
     .footer-items a{
         display: block;
