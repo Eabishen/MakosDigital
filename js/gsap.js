@@ -71,7 +71,6 @@ tl.from('.featurescards', {
 gsap.from('.bgcust', {
     scrollTrigger: {
         trigger: "#contacussection",
-        start:"20% 100%"
        
     },
     scale: 1.1,
