@@ -1154,7 +1154,7 @@ input[type=radio], [type=checkbox]{
 
 @media screen and (max-width: 500px){
 
-    body{
+    body, html{
         overflow-x: hidden;
     }
 
