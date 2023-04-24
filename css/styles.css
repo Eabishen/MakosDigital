@@ -8,7 +8,7 @@
 }
 
 
-*::before,
+*,*::before,
 *::after {
     box-sizing: border-box;
 }
@@ -40,6 +40,10 @@ a {
 body{
     font-family: 'Poppins', sans-serif;
     color: var(--our-dark);
+}
+
+.modal-lg{
+    width: 580px;
 }
 
 .primarycolor{
@@ -334,12 +338,14 @@ z-index: 99;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    transition:  all 0.3s cubic-bezier(0.49, 0.18, 0.22, 1.12);
+    /* transition:  all 0.3s cubic-bezier(0.49, 0.18, 0.22, 1.12); */
+    overflow-x: hidden;
 
 }
 
 .featuretile{
     font-weight: 700;
+    
 }
 
 .featuretile:hover{
@@ -351,7 +357,6 @@ z-index: 99;
 }
 
 .featurescards:hover{
-    transform: scale(1.05);
 }
 
 /* Testimonal */
@@ -672,6 +677,10 @@ input[type=radio], [type=checkbox]{
     z-index: 10;
     text-align: center;
     color: var(--our-light);
+}
+
+.service-landing h1{
+    font-weight: 800;
 }
 
 .image-left, .image-right{
@@ -1169,6 +1178,10 @@ input[type=radio], [type=checkbox]{
     .businesscards{
         padding: 1rem;
         gap: 1rem;
+    }
+
+    #featuressection .businesscards{
+        gap: 2rem;
     }
 
     .businessimage{

@@ -61,3 +61,5 @@
 // inputs.forEach(ele => {
 //     ele.addEventListener("click", changecolor(ele))
 // })
+
+
