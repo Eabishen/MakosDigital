@@ -1096,6 +1096,14 @@ input[type=radio], [type=checkbox]{
     .nav-link{
         font-size: 18px;
     }
+    .mainheading{
+        grid-template-columns: 1fr;
+    }
+
+    .ctabtn{
+        visibility: visible;
+    }
+
     .landingpage-card{
         grid-template-columns: 1fr;
     }
@@ -1145,6 +1153,10 @@ input[type=radio], [type=checkbox]{
 }
 
 @media screen and (max-width: 500px){
+
+    .modal-lg{
+        width: 100%;
+    }
     .wording{
         font-size: 13px;
     }
@@ -1192,9 +1204,7 @@ input[type=radio], [type=checkbox]{
         padding: 0rem 0.1rem;
     }
 
-    .ctabtn{
-        visibility: visible;
-    }
+   
 
     .bgcust{
         padding: 1rem 0.5rem;
