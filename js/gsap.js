@@ -79,6 +79,13 @@ gsap.from('.bgcust', {
     ease: "power2.inOut"
 })
 
+gsap.to(".bgcust", {
+    
+    display: "block",
+}
+
+)
+
 
 // Service page
 
