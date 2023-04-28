@@ -851,8 +851,8 @@ input[type=radio], [type=checkbox]{
 }
 
 .topdiv.margin-cust {
-    margin-bottom: 3rem;
-    margin-left: 04rem;
+    margin-bottom: 5rem;
+    margin-left: 3rem;
 }
 
 .bottomdiv{
@@ -1128,11 +1128,13 @@ input[type=radio], [type=checkbox]{
 
     .topdiv, .bottomdiv{
         font-size: 16px;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
+    
 
     .topdiv.margin-cust {
-        margin-left: 0rem;
-        margin-bottom: 0;
+        margin-left: 1rem;
+        margin-bottom: 4rem;
     }
 
     .howitsgoingfeatures{
@@ -1282,12 +1284,21 @@ input[type=radio], [type=checkbox]{
         margin-top: 2rem;
     }
     .topdiv, .bottomdiv{
-     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-columns: 1fr 1fr 2fr;
      grid-template-rows: 1fr;
      width: 100%;
      place-items: start;
     }
   
+    .topdiv.margin-cust {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .topdiv:hover, .bottomdiv:hover {
+        transform: scale(1.02);
+    }
+
 
     .howitsgoingpara{
         width: 100%;
