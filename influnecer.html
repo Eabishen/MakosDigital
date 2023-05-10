@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/favicon/favicon.ico" />
+    <title>Makos Digital || Email Marketing</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <h1 class="px-4 modal-title fs-3 fw-bold" id="staticBackdropLabel">
+              Get in Touch
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="formcust pt-0" action="">
+              <div class="col-12">
+                <label for="inputGroupPrepend" class="form-label"
+                  >Your Name</label
+                >
+                <div class="inputcontainer">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="yourname"
+                    aria-describedby="Name"
+                    placeholder="Enter Name"
+                    required
+                  />
+
+                  <div class="iconcontact">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 16 16"
+                      color="gray.800"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="inputGroupPrepend" class="form-label"
+                  >Your Email</label
+                >
+                <div class="inputcontainer">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="yourEmail"
+                    aria-describedby="Email"
+                    placeholder="Enter Email"
+                    required
+                  />
+
+                  <div class="iconcontact">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      color="gray.800"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill="none" d="M0 0h24v24H0V0z"></path>
+                      <path
+                        d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="inputGroupPrepend" class="form-label"
+                  >Your Phone</label
+                >
+                <div class="inputcontainer">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="yourphone"
+                    aria-describedby="phone"
+                    placeholder="Enter phone"
+                    required
+                  />
+
+                  <div class="iconcontact">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      color="gray.800"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path
+                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="" class="form-label">Inquiry for</label>
+                <div class="d-flex gap-3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="topform"
+                      id="self"
+                      checked
+                    />
+                    <label class="form-check-label" for="self"> Self </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="topform"
+                      id="company"
+                    />
+                    <label class="form-check-label" for="company">
+                      Company
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="" class="form-label">Regarding</label>
+                <div>
+                  <div class="form-check form-check-inline querycheckbox">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="webdev"
+                      value="Web Development"
+                    />
+                    <label class="form-check-label" for="webdev"
+                      >Web Development</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline querycheckbox">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="seo"
+                      value="Search Engine Marketing"
+                    />
+                    <label class="form-check-label" for="seo"
+                      >Search Engine Marketing</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline querycheckbox">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="smm"
+                      value="Social Media Marketing"
+                    />
+                    <label class="form-check-label" for="smm"
+                      >Social Media Marketing</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline querycheckbox">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="emailmarketing"
+                      value="Email Marketing"
+                    />
+                    <label class="form-check-label" for="emailmarketing"
+                      >Email Marketing</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline querycheckbox">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="contentmarketing"
+                      value="Content Marketing"
+                    />
+                    <label class="form-check-label" for="contentmarketing"
+                      >Content Marketing</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline querycheckbox">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="digitalmarketing"
+                      value="Digital Marketing"
+                    />
+                    <label class="form-check-label" for="digitalmarketing"
+                      >Digital Marketing</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline querycheckbox">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="other"
+                      value="other"
+                    />
+                    <label class="form-check-label" for="other">Other</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary fw-medium me-2" type="submit">
+                  Send Message
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal end -->
+
+    <header>
+      <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid mx-sm-2 mx-md-5">
+          <a class="navbar-brand" href="index.html">
+            <img width="68" src="./assets/makos-digital-logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main_nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main_nav">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item w-auto" href="our-services.html">
+                      <div class="flexboxdrop">
+                        <div class="wording">
+                          <p class="dropdowntitle">Our Services</p>
+                          <div class="wordpara">
+                            A wide range of digital marketing services
+                          </div>
+                        </div>
+                        <div class="svgclass">
+                          <svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 24 24"
+                            focusable="false"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g>
+                              <path fill="none" d="M0 0h24v24H0z"></path>
+                              <path
+                                d="M5 22a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v3h-2V4H6v16h12v-2h2v3a1 1 0 0 1-1 1H5zm13-6v-3h-7v-2h7V8l5 4-5 4z"
+                              ></path>
+                            </g>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item w-auto" href="web-development.html">
+                      <div class="flexboxdrop">
+                        <div class="wording">
+                          <p class="dropdowntitle">Web Development</p>
+                          <div class="wordpara">
+                            Trending design to inspire your business
+                          </div>
+                        </div>
+                        <div class="svgclass">
+                          <svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 24 24"
+                            focusable="false"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g>
+                              <path fill="none" d="M0 0h24v24H0z"></path>
+                              <path
+                                d="M5 22a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v3h-2V4H6v16h12v-2h2v3a1 1 0 0 1-1 1H5zm13-6v-3h-7v-2h7V8l5 4-5 4z"
+                              ></path>
+                            </g>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="socailengine-marketing.html">
+                      <div class="flexboxdrop">
+                        <div class="wording">
+                          <p class="dropdowntitle">Search Engine Marketing</p>
+                          <div class="wordpara">
+                            Get more traffic for your business growth
+                          </div>
+                        </div>
+                        <div class="svgclass">
+                          <svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 24 24"
+                            focusable="false"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g>
+                              <path fill="none" d="M0 0h24v24H0z"></path>
+                              <path
+                                d="M5 22a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v3h-2V4H6v16h12v-2h2v3a1 1 0 0 1-1 1H5zm13-6v-3h-7v-2h7V8l5 4-5 4z"
+                              ></path>
+                            </g>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item w-auto"
+                      href="socailmedia-marketing.html"
+                    >
+                      <div class="flexboxdrop">
+                        <div class="wording">
+                          <p class="dropdowntitle">Social Media Marketing</p>
+                          <div class="wordpara">
+                            Explore other opportunities to attract customers
+                          </div>
+                        </div>
+                        <div class="svgclass">
+                          <svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 24 24"
+                            focusable="false"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g>
+                              <path fill="none" d="M0 0h24v24H0z"></path>
+                              <path
+                                d="M5 22a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v3h-2V4H6v16h12v-2h2v3a1 1 0 0 1-1 1H5zm13-6v-3h-7v-2h7V8l5 4-5 4z"
+                              ></path>
+                            </g>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item w-auto" href="email-marketing.html">
+                      <div class="flexboxdrop">
+                        <div class="wording">
+                          <p class="dropdowntitle">Email Marketing</p>
+                          <div class="wordpara">
+                            Run campaigns for discount, new product, or
+                            corporate news
+                          </div>
+                        </div>
+                        <div class="svgclass">
+                          <svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 24 24"
+                            focusable="false"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g>
+                              <path fill="none" d="M0 0h24v24H0z"></path>
+                              <path
+                                d="M5 22a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v3h-2V4H6v16h12v-2h2v3a1 1 0 0 1-1 1H5zm13-6v-3h-7v-2h7V8l5 4-5 4z"
+                              ></path>
+                            </g>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item w-auto"
+                      href="content-marketing.html"
+                    >
+                      <div class="flexboxdrop">
+                        <div class="wording">
+                          <p class="dropdowntitle">Content Marketing</p>
+                          <div class="wordpara">
+                            Get creatives, logo or blogs for your business
+                          </div>
+                        </div>
+                        <div class="svgclass">
+                          <svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 24 24"
+                            focusable="false"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g>
+                              <path fill="none" d="M0 0h24v24H0z"></path>
+                              <path
+                                d="M5 22a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v3h-2V4H6v16h12v-2h2v3a1 1 0 0 1-1 1H5zm13-6v-3h-7v-2h7V8l5 4-5 4z"
+                              ></path>
+                            </g>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item w-auto"
+                      href="digital-marketing.html"
+                    >
+                      <div class="flexboxdrop">
+                        <div class="wording">
+                          <p class="dropdowntitle">Digital Marketing</p>
+                          <div class="wordpara">
+                            Get to consult with industry experts for better
+                            growth
+                          </div>
+                        </div>
+                        <div class="svgclass">
+                          <svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 24 24"
+                            focusable="false"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g>
+                              <path fill="none" d="M0 0h24v24H0z"></path>
+                              <path
+                                d="M5 22a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v3h-2V4H6v16h12v-2h2v3a1 1 0 0 1-1 1H5zm13-6v-3h-7v-2h7V8l5 4-5 4z"
+                              ></path>
+                            </g>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Client </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"> Contact us </a>
+              </li>
+            </ul>
+
+            <!-- Right -->
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  Get your Quote
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- navbar-collapse.// -->
+        </div>
+        <!-- container-fluid.// -->
+      </nav>
+    </header>
+
+    <section id="influencer">
+      <div class="container">
+        <div class="influencerwrapper">
+          <div class="influ-left">
+            <h1 class="blue-volietgradient">
+              Lorem ipsum dolor <br />
+              sit amet.
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
+              error nostrum hic atque deleniti vel maxime, in harum quis! Magni
+              inventore reprehenderit corporis vel nam? Labore, cupiditate!
+              Ullam
+            </p>
+            <a class="infbtn" href="coming-soon.html">
+              <button>Apply now</button>
+            </a>
+          </div>
+          <div class="influ-right">
+            <img
+              src="./assets/service/social-media-concept-with-smartphone.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="highinv">
+      <div class="container">
+        <div class="highheading">
+          <h2 class="blue-volietgradient">
+            Influencers Can Make a Huge Impact With Us
+          </h2>
+          <p class="invest-para">
+            We don't take money from individuals. We will make investments only
+            from seasoned entrepreneurs and professional VCs who have been
+            through an entrepreneurial journey. This journey is very tough and
+            it will have a lot of ups & downs which will not be able to be
+            handled by people who have never gone through this before. Investing
+            money in companies is a huge risk. Even though we have a clear plan
+            and a great execution team, many factors matter. It's a 3 Year plan
+            minimum and a long-term plan. The intention is to build a great
+            company that will touch people's lives in a positive way and money
+            will be a byproduct. We are aiming for a huge impact and returns as
+            well.
+          </p>
+        </div>
+        <div class="highimage">
+          <img src="./assets/service/graphC.png" alt="" />
+        </div>
+        <div class="hightesti">
+          ❝We take money only from people who can align with our audacious
+          vision and hold for a long term❞
+        </div>
+      </div>
+      <div class="line-circle">
+        <img src="./assets/service/linecircle.svg" alt="" />
+      </div>
+    </section>
+
+    <section id="highrules">
+      <div class="container">
+        <div class="highheading">
+          <h2 class="blue-volietgradient">
+            Golden Rules from Us For influencers
+          </h2>
+          <div class="highpoints">
+            <div class="singlepoints">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              odit cum quos incidunt, natus modi adipisci deleniti Lorem ipsum
+              dolor sit, amet consectetur adipisicing elit. Nulla aperiam nobis
+              pariatur sunt fugit aliquam aliquid alias, reprehenderit
+              exercitationem deserunt.
+            </div>
+            <div class="singlepoints">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              odit cum quos inciduntilique officiis adipisci deleniti
+            </div>
+            <div class="singlepoints">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              odit cum quos incidunt, natus modi pariatur similique officiis
+              adipisci deleniti
+            </div>
+            <div class="singlepoints">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              odit cum quos incidunt
+            </div>
+            <div class="singlepoints">
+              Lorem ipsum dolor ssecteing elit. Sunt odit cum quos incidunt,
+              natus modi pariatur similique officiis adipisci deleniti
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="highrules">
+      <div class="container">
+        <div class="highheading">
+          <h2 class="blue-volietgradient">Together we will create a history</h2>
+        </div>
+        <div>
+          <div class="highimage highapply">
+            <img class="rounded" src="./assets/service/97.jpg" alt="" />
+          </div>
+          <div class="infbtncont">
+            <a class="infbtn" href="coming-soon.html">
+              <button>Apply now</button>
+            </a>
+            <div class="highaction">
+              Come join us to make a <span>difference</span>!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line-circle">
+        <img src="./assets/service/linecircle.svg" alt="" />
+      </div>
+      <div class="line-circle2">
+        <img src="./assets/service/linecircle.svg" alt="" />
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="footerWrapper">
+          <div class="footer-items">
+            <div class="footerimage">
+              <img width="68" src="./assets/makos-digital-logo.png" alt="" />
+            </div>
+            <p class="footercopy">
+              © 2023 Makos Infotech Pvt Ltd. All rights reserved
+            </p>
+            <div class="footersocial">
+              <div class="socailicons">
+                <a
+                  href="https://www.facebook.com/makosdigital?mibextid=ZbWKwL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                    height="28px"
+                    width="28px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path
+                      d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="socailicons">
+                <a
+                  href="https://instagram.com/makosdigital?igshid=Yzg5MTU1MDY="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 1024 1024"
+                    aria-hidden="true"
+                    focusable="false"
+                    height="28px"
+                    width="28px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3 645.3 585.4 645.3 512 585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9 717.1 398.5 717.1 512 625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9 47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="socailicons">
+                <a
+                  href="https://www.linkedin.com/feed/update/urn:li:activity:6915191638457798657?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6915191638457798657%29"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                    focusable="false"
+                    height="22px"
+                    width="22px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-items">
+            <div class="footertile">Company</div>
+            <div class="footerlinks">
+              <a href=""> About us</a>
+              <a href=""> Blog</a>
+              <a href=""> Contact us</a>
+              <a href="index.html#testimonal"> Testimonials</a>
+            </div>
+          </div>
+          <div class="footer-items">
+            <div class="footertile">Support</div>
+            <div class="footerlinks">
+              <a href=""> Help Center</a>
+              <a href=""> Terms of Service</a>
+              <a href=""> Privacy Policy</a>
+            </div>
+          </div>
+          <div class="footer-items">
+            <div class="footertile">Support</div>
+            <div class="row">
+              <div class="col-auto px-0">
+                <label for="emailaddress" class="visually-hidden"
+                  >Your Email address</label
+                >
+              </div>
+              <div class="input-group mx-0 px-0">
+                <input
+                  type="text"
+                  class="form-control rounded-3"
+                  id="validationCustomUsername"
+                  aria-describedby="inputGroupPrepend"
+                  placeholder="Your Email Address"
+                  required
+                />
+                <span class="input-group-text border-0" id="inputGroupPrepend">
+                  <button
+                    type="submit"
+                    class="btn btn-indgo"
+                    style="background-color: #4267b2; color: var(--our-light)"
+                  >
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"
+                      ></path>
+                      <path d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path>
+                    </svg>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+    <!-- CDNs are Fast in this case according to docs Incase if want to use it locally,
+       I added gsap files locally(including all plugins).. u can uncomment the below code make gsap work locally  -->
+
+    <!-- 
+      <script src="./js/gsap/gsap.min.js"></script>
+    <script src="./js/gsap/ScrollTrigger.min.js"></script> -->
+    <script src="js/gsap.js"></script>
+
+    <!-- Bootstrap -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        autoHeight: true,
+        pagination: {
+          el: ".swiper-pagination",
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+          clickable: true,
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+        },
+      });
+
+      (() => {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
