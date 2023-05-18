@@ -1389,14 +1389,20 @@
       );
       const featuresSection = document.getElementById("modalhelper");
 
-      const observer = new IntersectionObserver((entries, observer) => {
-        if (entries[0].isIntersecting) {
+      window.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
           modalbtn.click();
-          observer.disconnect();
-        }
+        }, 5000);
       });
 
-      observer.observe(featuresSection);
+      // const observer = new IntersectionObserver((entries, observer) => {
+      //   if (entries[0].isIntersecting) {
+      //     modalbtn.click();
+      //     observer.disconnect();
+      //   }
+      // });
+
+      // observer.observe(featuresSection);
     </script>
   </body>
 </html>
