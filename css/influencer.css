@@ -94,11 +94,12 @@
     overflow: hidden;
     border-radius: 10px;
     margin-block: 2rem;
+    border: 1px solid #f1f1f1;
     
 }
 
 .topinfluncers .influncer-main{
-    min-height: 220px;
+    min-height: 180px;
 }
 
 .topinfluncers .influprofile{
@@ -123,7 +124,7 @@
 }
 
 .influprofile{
-    padding: 1rem;
+    padding: 1rem 0rem 1rem 0.5rem;
 }
 
 
@@ -133,6 +134,7 @@
 
 .topinfluncers .influprofile p{
     color: #616161;
+    font-size: 14px;
 }
 
 
